@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-awxr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-90-tenant/load-app-12fff2eb-1f38-4dc8-bcae-b8ba3e2ed67a/devfile-sample-awxr@sha256:a4c0368986261058cb460832bb920fbc97abb96f75d3b32ecda6ceb173cd14d3
+        name: my-nodejs
+        resources: {}
+status: {}
